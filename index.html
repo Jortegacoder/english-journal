@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Journal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+
+        <section class="days-section">
+            <div class="journal-container">
+                <h1>Day 1</h1>
+                <p>Today is not the first day of the English Challenge, i was doing a layout of the Web Challenge and i took me a lot time. <br />
+                I wanted to make this journal with code to continue practicing.</p>
+            </div>
+            <div class="words-container">
+                <h1>New Bocavulary</h1>
+                <ul>
+                    <li>allow - Permitir</li>
+                    <li>Behavior - Comportamiento</li>
+                    <li>regardless - independientemente</li>
+                    <li>deprecated - obsoleto</li>
+                    <li>abroad - extranjero</li>
+                    <li>dig - excavación</li>
+                    <li>laugh - risa</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="days-section">
+            <div class="journal-container">
+                <h1>Day 2</h1>
+                <p>Today is the same day as day one 😅 because yesterday I couldn't do the challenge. <br />
+                Writing in english is difficult for me but i'm trying, I confess that I use the translator but I try to understand.</p>
+            </div>
+            <div class="words-container">
+                <h1>New Bocavulary</h1>
+                <ul>
+                    <li>synced - sincronizado</li>
+                    <li>source - fuente</li>
+                    <li>shortcut- atajo</li>
+                    <li>sand - arena</li>
+                    <li>hear - escuchar , oir</li>
+                    <li>Thunder - trueno</li>
+                    <li>Gloating - regodearse</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="days-section">
+            <div class="journal-container" id="cardContainer" >
+                <h1>Day 3</h1>
+                <p>Dear journal 📗🤣... today I practice listening with a netflix series (The Queen's Gambit). <br /> I have not played chess for a long time but watching that series I want to try again😂</p>
+                <button class="chess-button" id="chess-button" onclick="chessTransition()">Go!</button>
+            </div>
+            <div class="gambit hide" id="cardContainer2">
+                <button class="chess-button chess-button2" onclick="chessTransition2()">Go!</button>
+            </div>
+            
+            <div class="words-container">
+                <h1>New Bocavulary</h1>
+                <ul>
+                    <li>Ceiling - techo</li>
+                    <li>Wind - viento</li>
+                    <li>Stool - banquillo , banca</li>
+                    <li>Holler , shout - gritar </li>
+                    <li>Bed - cama</li>
+                    <li>Chapel - capilla</li>
+                    <li>Throat - garganta</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="days-section">
+            <div class="journal-container">
+                <h1>Day 4</h1>
+                <p>Day 4 and now i only listen to songs in English, i try to sing but i only know the choruses😰. <br> 
+                    Btw, in class i can understand the teacher, hopefully everyone will talk like her😅.</p>
+            </div>
+            <div class="words-container">
+                <h1>New Bocavulary</h1>
+                <ul>
+                    <li>bet - apuesta</li>
+                    <li>trip - viaje</li>
+                    <li>laces - cordones</li>
+                    <li>brain - cerebro</li>
+                    <li>blind - ciego</li>
+                    <li>centuries - siglos</li>
+                    <li>Holidays - dias festivos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="days-section">
+            <div class="journal-container">
+                <h1>Day 5</h1>
+                <p>Today i start again with the duolingo app, the app is very useful for vocabulary, i like it. <br />
+                    Btw, i'm still watching the Netflix series, with english subtitles because i can't understand without them. 
+                </p>
+            </div>
+            <div class="words-container">
+                <h1>New Bocavulary</h1>
+                <ul>
+                    <li>build - construir</li>
+                    <li>knowledge - conocimiento</li>
+                    <li>Field - campo</li>
+                    <li>evolve - evolucionar</li>
+                    <li>average - promedio</li>
+                    <li>engaged - comprometido</li>
+                    <li>Bass - bajo (instrumento)</li>
+                </ul>
+            </div>
+        </section>
+
+        <figure class="img-footer">
+            <img src="./assets/en-icon.webp" alt="english icon">
+        </figure>
+    </main>
+    <script>
+        const btn = document.getElementById ('chess-button');
+        const card = document.getElementById ('cardContainer');
+        const card2 = document.getElementById ('cardContainer2');
+    
+        function chessTransition() {
+            card2.classList.remove('hide')
+            card.classList.add('hide')
+        }
+    
+        function chessTransition2() {
+            card.classList.remove('hide')
+            card2.classList.add('hide')
+        }
+    </script>
+</body>
+</html>
